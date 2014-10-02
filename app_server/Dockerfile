@@ -3,6 +3,6 @@ ADD requirements.pip requirements.pip
 RUN pip install -r requirements.pip
 VOLUME ['/opt/project/']
 WORKDIR /opt/project/
-EXPOSE 8000
+EXPOSE 5000
 
-CMD ./manage.py runserver
+CMD python manage.py runserver 0.0.0.0:5000
