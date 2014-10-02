@@ -11,7 +11,7 @@ Vagrant.configure("2") do |config|
       d.build_dir = "." #"phusion/baseimage"
       d.ports  = ['80:5000']
     end
-    #config.vm.synced_folder "./project", "/project"
+    app.vm.synced_folder "./project/", "/opt/project/"
   end
 
   #config.ssh.username = "root"
